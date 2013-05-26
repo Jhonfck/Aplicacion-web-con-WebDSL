@@ -1,0 +1,1459 @@
+<?xml version="1.0" ?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+      
+        <display-name>CentroDatos</display-name>
+        
+        <description>CentroDatos</description>
+      
+                   
+        <welcome-file-list>
+            <welcome-file>root</welcome-file>
+        </welcome-file-list>
+        
+        <servlet>
+          <servlet-name>mainservlet</servlet-name>
+          <servlet-class>utils.DispatchServlet</servlet-class>
+        </servlet> 	
+        <servlet>
+          <servlet-name>jcaptcha</servlet-name>
+          <servlet-class>utils.ImageCaptchaServlet</servlet-class>
+          <load-on-startup>0</load-on-startup>
+        </servlet>
+        <servlet-mapping>
+          <servlet-name>jcaptcha</servlet-name>
+          <url-pattern>/jcaptcha</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+          <servlet-name>mainservlet</servlet-name>
+          <url-pattern>/pagenotfound/*</url-pattern>
+        </servlet-mapping>	
+        
+         
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/accessDenied/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/manageCustomer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/pagenotfound/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/root/*</url-pattern>
+            </servlet-mapping>	
+            
+         
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/applicationmenu/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/applicationmenu_ta0/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/applicationmenu_ta1/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/body/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/break/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/column/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/container/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_body0$l$/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_body0$l$_s_ad0String__Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta11Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta12Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta13Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta14Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta1Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta2Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta3Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta4Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta5Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta6Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta7Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta8Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/createCustomer_ta0Customer_ta9Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_body0$l$Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta11Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta12Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta13Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta14Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta1Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta2Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta3Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta4Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta5Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta6Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta7Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta8Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/customerCustomer_ta0Customer_ta9Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/dateinputgenericDate__String__String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/dateinputgenericDate__String__String__String_ta0List_String___String__String__String__String__String__Date/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/dateoutputgenericDate__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/datepickerinputDate__String__String__String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/div/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_body0$l$Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_body0$l$Customer_s_ad0String__Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta0Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta11Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta12Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta13Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta14Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta1Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta2Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta3Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta4Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta5Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta6Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta7Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta8Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/editCustomerCustomer_ta0Customer_ta9Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/elementsempty/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/errorTemplateActionList_String_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/errorTemplateFormList_String_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/errorTemplateInputList_String_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/fieldsetString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/group/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/groupitem/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/groupString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxBool/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxEmail/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxEntity__List_Entity__ta0List_Entity___Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxFloat/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxInt/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxList_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxList_Entity__ta0List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxList_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxLong/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSecret/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSecret_ta0Secret/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxSet_Entity___List_Entity__ta0List_Entity___Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxText_ta0Text/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxURL/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxURL_ta0URL/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxWikiText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputajaxWikiText_ta0WikiText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputBool/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputBoolInternalBool__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputBool_ta0List_String___String__Bool/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputCheckboxSetInternalHelperSet_Entity___Set_Entity___Entity__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputCheckboxSetInternalSet_Entity___List_Entity___String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputDate/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputDateTime/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputDateTime_ta0String__String__String__DateTime/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputDate_ta0String__String__Date/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEmail/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEmailInternalEmail__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEmail_ta0List_String___String__String__Email/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEntityInternalEntity__List_Entity___String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputEntity__List_Entity__ta0List_Entity___Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFile/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFileInternalFile__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFile_ta0List_String___String__String__File/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFloat/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFloatInternalFloat__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputFloat_ta0List_String___String__String__Float/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputImage/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputInt/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputIntInternalInt__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputInt_ta0List_String___String__String__Int/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputListInternalList_Entity___List_Entity___String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputList_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputList_Entity__ta0List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputList_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputList_Entity___List_Entity__ta0List_String___String__List_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputLong/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputLongInternalLong__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputLong_ta0List_String___String__String__Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSDFajaxText__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSDFText__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSDFText__String_ta0List_String___String__String__String__Text/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSecret/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSecretInternalSecret__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSecret_ta0List_String___String__String__Secret/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSelectMultipleInternalSet_Entity___List_Entity___String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputSet_Entity___List_Entity__ta0List_Entity___Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputStringInternalString__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputString_ta0List_String___String__String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputTextInternalText__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputText_ta0List_String___String__String__Text/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputTime/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputTime_ta0String__String__Time/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputURL/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputURLInternalURL__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputURL_ta0List_String___String__String__URL/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputWikiText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputWikiTextInternalWikiText__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/inputWikiText_ta0List_String___String__String__WikiText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelcolumnsString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelcolumnsString_labelInternal0$l$String__String__TemplateContext__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelcolumnsString_ta0String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelInternalString__String__TemplateContext/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelString_ta0TemplateContext__List_String___String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelString_ta1TemplateContext__List_String___String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/labelString_ta2TemplateContext__List_String___String__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/main/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/mainheader/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/manageCustomer_body0$l$/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/manageCustomer_body0$l$_s_ad0String__Customer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menu/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menubar/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menuheader/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menuitem/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menuitems/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/menuspacer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/messages/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/navbaritem/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/noMessages/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputATerm/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputBool/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputDate/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputDateTime/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputEmail/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputFloat/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputInt/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputLong/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputSecret/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputTime/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputURL/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/outputWikiText/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/par/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/pre/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioajaxEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioajaxEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioajaxEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioEntity__List_Entity__ta0List_String___String__String__List_Entity___Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/radioInternalEntity__List_Entity___String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/root_body0$l$/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/row/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectajaxSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxajaxSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxajaxSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxajaxSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectcheckboxSet_Entity___List_Entity__ta0List_String___String__List_Entity___Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectEntity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectEntity_ta0Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectEntity__List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectEntity__List_Entity__ta0List_String___String__List_Entity___Entity/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectSet_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectSet_Entity__ta0Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectSet_Entity___List_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/selectSet_Entity___List_Entity__ta0List_String___String__List_Entity___Set_Entity_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showMessagesList_String_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta0Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta11Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta12Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta13Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta14Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta15Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta16Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta17Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta18Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta19Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta1Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta21Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta22Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta23Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta24Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta25Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta26Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta27Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta28Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta29Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta2Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta31Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta32Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta33Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta34Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta35Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta36Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta37Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta38Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta39Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta3Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta41Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta42Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta43Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta44Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta45Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta46Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta47Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta48Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta4Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta5Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta6Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta7Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta8Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/showSearchStats_ta9Long/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/spacer/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/table/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/templateSuccessList_String_/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/validateBool__String/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/wrapsubmitString/*</url-pattern>
+            </servlet-mapping>	
+             
+            <servlet-mapping>
+              <servlet-name>mainservlet</servlet-name>
+              <url-pattern>/wrapsubmitString_ta0String/*</url-pattern>
+            </servlet-mapping>	
+            
+        <error-page>
+          <error-code>404</error-code>
+          <location>/pagenotfound</location>
+        </error-page>
+        
+        <!-- sessions stored entirely in database instead
+        <session-config>
+          <session-timeout><%= x_sessiontimeout %></session-timeout>
+        </session-config>
+        -->
+      </web-app>

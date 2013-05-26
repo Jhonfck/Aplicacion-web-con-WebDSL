@@ -1,0 +1,1 @@
+("9.7pre4429",["src-generated/webdsl/generated/templates/main_Template.java"],Define([],"main"{OriginalNameAnno("main")},[],None,[TemplateCall("body"{OriginalNameAnno("body")},[],[],TemplateBody([])){CalledTemplateArgs([]),CallToDefinedAnno,PositionAnno("")}]){TemplateClassName("main_Template"),SessionEntities([]),PositionAnno("")})
